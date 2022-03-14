@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title> Cervecería Cruz Blanca Vva </title>
+	<link rel="icon" href=../Multimedia/favicon.png type="imagen/jpg" >
+<!-- favicon 
+ <link rel="icon" type="image/png" href="/image/icon/favicon/favicon-32x32.png" sizes="32x32">
+ <link rel="icon" type="image/png" href="/image/icon/favicon/android-chrome-192x192.png" sizes="192x192">
+ <link rel="icon" type="image/png" href="/image/icon/favicon/favicon-96x96.png" sizes="96x96">
+ <link rel="icon" type="image/png" href="/image/icon/favicon/favicon-16x16.png" sizes="16x16">
+-->
+	<meta name="author" content="Olatz Parra Martín">
+	<meta name="description" content="Esta es una web gratuita con enlaces de interés">
+	<meta charset="utf-8">
+	<meta name="viewport" content="web">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/Formulario.css">
+	<script src="https://kit.fontawesome.com/ab4f547ed4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div>
+    <header>
+      <!--Menú de navegación-->
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="botoncheck">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="../Multimedia/logo.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home">Inicio</i></a></li>
+            <li><a href="../Documentos/Localización.html"><i class="fas fa-user">Encuéntranos</i></a></li>
+            <li><a href="../Documentos/Carta.html"><i class="fas fa-book-open">Carta</i></a></li>
+            <li><a href="../Documentos/horario.html"><i class="fas fa-clock">Horario</i></a></li>
+            <li><a href="../Documentos/Formulario.html"><i class="fas fa-envelope">Contacto</i></a></li>
+        </ul>
+    </nav>
+    </header><br>
+    <!--Formulario de datos personales-->
+<form>
+  <fieldset>
+  <legend><b>Datos personales:</b></legend>
+  <label for="fname">Nombre:</label>
+  <input type="text" id="fname" name="Nombre" required><br><br>
+  <label for="lname">Apellido:</label>
+  <input type="text" id="lname" name="Apellido" required><br><br>
+  <label for="fname">Email:</label>
+  <input type="text" id="fname" name="Nombre"><br><br>
+  <label for="fname">Contraseña:</label>
+  <input type="text" id="fname" name="Nombre"><br><br>
+  <label for="edad">Edad:</label>
+  <input type="number" id="edad" name="edad"><br><br>
+  <label for="edad">Fecha de nacimiento:</label>
+  <input type="date" id="edad" name="edad" pattern="[18-65]{2}"><br><br>
+  <input type="image" src="../Multimedia/logo.png" alt="submit" width="150px" height="70px"><br><br>
+  <label for="myfile">Seleccionar archivo:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+
+  <label for="cars"><b>Comunidad:</b></label>
+    <select name="cars" id="cars">
+        <option value="Extremadura">Extremadura</option>
+        <option value="Andalucía">Andalucía</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Canarias">Canarias</option>
+        <option value="Asturias">Asturias</option>
+        <option value="Murcia">Murcia</option>
+        <option value="La Rioja">La Rioja</option>
+        <option value="Castilla y León">Castilla y León</option>
+    </select>
+    <br><br>
+</fieldset>
+<!--Formulario de otros datos-->
+  <fieldset>
+  <legend><b>Otros datos:</b></legend><br>
+  <h4><b>Indica lo que más te gustó en la visita al bar:</b></h4>
+  <input type="checkbox" id="aficion1" name="aficion1" value="Leer">
+  <label for="vehicle1">Comida</label>
+  <input type="checkbox" id="aficion2" name="aficion2" value="Viajar">
+  <label for="vehicle2">Servicio</label>
+  <input type="checkbox" id="aficion3" name="aficion3" value="Fútbol">
+  <label for="vehicle3">Interior del bar</label>
+  <input type="checkbox" id="aficion4" name="aficion4" value="Baloncesto">
+  <label for="vehicle3">Precios</label><br><br>
+
+  <h4>Sexo</h4>
+  <input type="radio" id="html" name="fav_language" value="Hombre">
+  <label for="html">Hombre</label><br>
+  <input type="radio" id="css" name="fav_language" value="Mujer">
+  <label for="css">Mujer</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="No contesta">
+  <label for="javascript">No contesta</label><br><br>
+
+  <h4>Rango</h4>
+  <label for="vol">Valóranos del 1 al 10:</label>
+  <input type="range" id="vol" name="vol" min="0" max="10"><br><br>
+  <h4>Comentario</h4>
+  <textarea name="mensaje" placeholder="Escriba aquí su comentario"></textarea>
+</fieldset>
+<input type="submit" value="Enviar">
+<input type="reset" value="Cancelar">
+<input type="search" value="Buscar">
+</form><br><br>
+<!--Aside-->
+<div class="publicidad">
+  <aside>
+      <h4>Contacta con la creadora</h4>
+      <a href="https://miblogopm.blogspot.com/"><i id="icono" class="fab fa-blogger"></i></a>
+  </aside><br>
+</div><br>
+<div>
+  <a href="../Documentos/Formulario.html" class="arriba">Volver arriba</a><br>
+  <a href="../index.html" class="arriba">Volver a la página principal</a>
+</div>
+<!--Footer-->
+<div>
+  <footer>
+      <h3>Contacta con nosotros</h3>
+      <a href="https://www.instagram.com/lacruzblancavillanueva/"><i id="icono" class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/lacruzblancaVva/"><i id="icono" class="fab fa-facebook-square"></i></a>
+      <a href="tel:924965291"><i id="icono" class="fas fa-phone"></i></a><br>
+			<a href="../Documentos/Política de privacidad.html" class="politica">Políticas de privacidad</a>
+			<a href="../Documentos/Política de cookies.html" class="politica">Políticas de cookies</a>
+  </footer>
+</div>
+</body>
+</html>

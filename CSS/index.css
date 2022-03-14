@@ -1,0 +1,341 @@
+body{
+    background-color: white;
+}
+
+header{
+    text-align: center;
+}
+
+.primera-parte{
+    display: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: blue;
+    width: 100%;
+    height: 90px;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 50px;
+    margin: 20px;
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/*Al pasar el ratón por encima del contenido que está dentro de li, cambia de color y tiene una transición de 4 segundos*/
+li a.active, li a:hover{
+    background-color: rgb(139, 202, 243);
+    transition: .4s;
+}
+
+/*Este botón de fontawesome, al poner el ratón encima de él, el cursor cambia de diseño*/
+.botoncheck{
+    font-size: 35px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+img{
+    float: left;
+    height: 50px;
+}
+
+.arriba{
+    background-color: blue;
+    color: white;
+}
+
+.far{
+    float: right;
+    padding: 15px;
+}
+
+/*Carrusel de imágenes*/
+.banner{
+    position: relative;
+    width: 100%;
+    height: calc(90vh - 40px);
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out;
+    background-image: url(../Multimedia/foto1.jpg);
+    animation: banner 35s infinite linear;
+}
+
+/*Esta clase muestra la frase en blanco encima del carrusel*/
+.banner-content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 22, 40, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content h1{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.banner-content a{
+    text-decoration: none;
+    color: white;
+    padding: 9px 20px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+.banner-content a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Esto muestra el procentaje de cada imagen dependiendo de los segundos que muestre cada imagen*/
+@keyframes banner{
+    0%{
+        background-image: url(../Multimedia/foto1.jpg);
+    }
+    20%{
+        background-image: url(../Multimedia/foto1.jpg);
+    }
+    21%{
+        background-image: url(../Multimedia/foto3.jpg);
+    }
+    40%{
+        background-image: url(../Multimedia/foto3.jpg);
+    }
+    41%{
+        background-image: url(../Multimedia/foto7.jpg);
+    }
+    60%{
+        background-image: url(../Multimedia/foto7.jpg);
+    }
+    61%{
+        background-image: url(../Multimedia/foto6.jpg);
+    }
+    80%{
+        background-image: url(../Multimedia/foto6.jpg);
+    }
+    81%{
+        background-image: url(../Multimedia/foto5.jpg);
+    }
+    100%{
+        background-image: url(../Multimedia/foto5.jpg);
+    }
+}
+
+footer, h3{
+    color: white;
+}
+
+footer{
+    background-color: blue;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+#icono{
+    font-size: 25px;
+    color: white;
+}
+
+.rectangulo{
+    background-color: blue;
+    border: 1px solid black;
+    width: 100%;
+    height: 150px;
+}
+
+.parraforect{
+    font-size: 50px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 45px;
+}
+
+.titulo{
+    font-size: 40px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: 1px blue;
+}
+
+.info{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.servicio{
+    width: 500px;
+    height: 300px;
+    margin-left: 500px;
+}
+
+.politica{
+    color: white;
+}
+
+.publicidad{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+
+/*Tamaño de vista para tablet*/
+@media screen and (max-width:800px) {
+    .parraforect{
+        font-size: 3em;
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 13px;
+        text-transform: none;
+    }
+    .servicio{
+        margin-left: 0;
+        width: 450px;
+        height: 300px;
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    .info{
+        font-size: 1em;
+    }
+    .parraforect{
+        font-size: 2em;
+    }
+}
+
+/*Tamaño de vista para móvil*/
+@media screen and (max-width:600px) {
+    .parraforect{
+        font-size: 1.5em;
+    }
+    .titulo{
+        font-size: 1em;
+    }
+    .info{
+        font-size: 1em;
+    }
+    .servicio{
+        margin-left: 0;
+        width: 450px;
+        height: 300px;
+    }
+    .banner{
+        display: none;
+    }
+    iframe{
+        width: 450px;
+    }
+    .vinos{
+        font-size: 0.8em;
+    }
+    .glovo{
+        margin-left: 0;
+        width: 500px;
+        height: 300px;
+    }
+    .número{
+        margin-left: 0;
+    }
+    .botoncheck{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(21, 21, 153);
+        top: 90px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+    li a:hover, a.active{
+        background: none;
+        color: aqua;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .primera-parte{
+        display: block;
+    }
+    .titulo-1{
+        background-color: rgb(139, 202, 243);
+        color: white;
+    }
+    .bar-movil{
+        width: 450px;
+        height: 300px;
+    }
+    .parrafo-movil{
+        font-family: cursive;
+    }
+    
+}
